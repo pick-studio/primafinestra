@@ -16,29 +16,33 @@ import "swiper/swiper-bundle.min.css";
 SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectFade]);
 
 export default function CardGallery({ items, salePercent }) {
-  let arrowImage = items.images;
-  let arrowImageArray = arrowImage.map(item => item.fields.file.url);
+  // let arrowImageArray = arrowImage.map(item => item.fields.file.url);
   const [isOpen, setIsOpen] = React.useState(false);
   const [photoIndex, setPhotoIndex] = React.useState(0);
 
   return (
     <div className="card-product__slider">
-      <div className="card-product__slider-container">
-        <div className="card-product__slider-left-container">
-          {items.salePrice && (
-            <div className="card-product__slider-sale">
-              <span>
-                Скидка {Math.round(100 - (items.salePrice * 100) / items.price)}
-                %
-              </span>
+
+      {items &&
+        <>
+          <div className="card-product__slider-container">
+            <div className="card-product__slider-left-container">
+              {items.salePrice && (
+                <div className="card-product__slider-sale">
+                  <span>
+                    Скидка {Math.round(100 - (items.salePrice * 100) / items.price)}
+                    %
+                  </span>
+                </div>
+              )}
+              {items.hit && (
+                <div className="card-product__slider-hit">Хит продаж</div>
+              )}
             </div>
-          )}
-          {items.hit && (
-            <div className="card-product__slider-hit">Хит продаж</div>
-          )}
-        </div>
-        {items.new && <div className="card-product__slider-new">Новинка!</div>}
-      </div>
+            {items.new && <div className="card-product__slider-new">Новинка!</div>}
+          </div>
+        </>
+      }
 
       {items &&
         <Swiper
@@ -58,7 +62,7 @@ export default function CardGallery({ items, salePercent }) {
             },
           }}
         >
-          {arrowImage.map((currentImage, index) => {
+          {items.images.map((currentImage, index) => {
             return (
               <SwiperSlide className="card-product__slider-item"
                 key={index}
@@ -77,7 +81,7 @@ export default function CardGallery({ items, salePercent }) {
             );
           })}
 
-          {arrowImage.length > 1 && (
+          {items.images.length > 1 && (
             <div className="container">
               <div className="card-product__arrow-container">
                 <div className="container">

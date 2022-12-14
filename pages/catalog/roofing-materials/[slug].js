@@ -51,7 +51,7 @@ export default function CardProduct({ products, currentItem }) {
     return (
         <>
             <Head>
-                {currentItem.name &&
+                {currentItem &&
                     <title>{currentItem.name} - купить в Москве c доставкой по России</title>
                 }
                 <meta
