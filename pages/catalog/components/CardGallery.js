@@ -1,8 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+// import Lightbox from "react-image-lightbox";
+// import "react-image-lightbox/style.css";
 
 import SwiperCore, {
   Navigation,
@@ -94,7 +94,7 @@ function CardGallery({ items, salePercent }) {
         )}
       </Swiper>
 
-      {!!isOpen && (
+      {/* {!!isOpen && (
         <Lightbox
           animationDuration={500}
           closeLabel="Закрыть"
@@ -126,7 +126,7 @@ function CardGallery({ items, salePercent }) {
             )
           }
         />
-      )}
+      )} */}
 
     </div>
   );
