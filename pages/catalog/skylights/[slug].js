@@ -2,8 +2,8 @@ import { createClient } from "contentful";
 import ProductCard from "../../../components/ProductCard/index.js";
 
 const client = createClient({
-    space: "ksxruw579ug0",
-    accessToken: "46VBmXHaNdjwhUydabQnRvM9eQtW4-F0KLFCh8BFgaY",
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
 });
 
 export const getStaticPaths = async () => {

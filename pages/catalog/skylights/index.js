@@ -7,8 +7,8 @@ import * as contentful from 'contentful';
 
 export async function getStaticProps() {
     const client = contentful.createClient({
-        space: "ksxruw579ug0",
-        accessToken: "46VBmXHaNdjwhUydabQnRvM9eQtW4-F0KLFCh8BFgaY",
+        space: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_KEY,
     });
 
     const products = await client.getEntries({

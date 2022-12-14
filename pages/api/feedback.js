@@ -16,8 +16,8 @@ export default async (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            user: "test@pick-studio.ru", // Сделать через .env.local
-            pass: "L%Zk3z9a", // Сделать через .env.local
+            user: process.env.MAIL_LOGIN, // Сделать через .env.local
+            pass: process.env.MAIL_PASSWORD, // Сделать через .env.local
         },
     });
 
