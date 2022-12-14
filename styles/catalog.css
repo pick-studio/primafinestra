@@ -1,0 +1,318 @@
+.catalog-roof-windows {
+  min-width: 100%;
+  min-height: 100vh;
+  padding-top: 160px;
+  padding-bottom: 60px;
+}
+
+.catalog-roof-windows__list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  animation-name: emergenceAnimation;
+  animation-duration: 0.5s;
+}
+
+@keyframes emergenceAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.catalog-roof-windows__item {
+  position: relative;
+  padding: 15px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+  background: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  color: #333;
+  transition: 0.5s;
+}
+
+.catalog-roof-windows__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.catalog-roof-windows__item-hit {
+  padding: 7.5px 10px;
+  position: absolute;
+  top: 15px;
+  left: 12.5px;
+  background: rgb(73, 179, 63);
+  border-radius: 7.5px;
+  color: #fff;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.catalog-roof-windows__item-new {
+  padding: 7.5px 10px;
+  position: absolute;
+  top: 15px;
+  right: 12.5px;
+  background: #444;
+  border-radius: 7.5px;
+  color: #fff;
+  font-weight: 500;
+  z-index: 10;
+}
+
+.catalog-roof-windows__item-new-text--min {
+  display: none;
+}
+
+.catalog-roof-windows__item:last-child {
+  margin-right: 0;
+}
+
+.catalog-roof-windows__item:hover {
+  transform: scale(1.025);
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.catalog-roof-windows__title-container {
+  margin-bottom: 50px;
+}
+
+.catalog-roof-windows__title {
+  margin-bottom: 7.5px;
+  font-size: 26px;
+  color: #333;
+}
+
+.catalog-roof-windows__subtitle {
+  margin: 0;
+  color: #999;
+}
+
+.catalog-roof-windows__item-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.catalog-roof-windows__item-signature {
+  margin: 0;
+  margin-bottom: 3.5px;
+  color: #999;
+  font-size: 12px;
+}
+
+.catalog-roof-windows__item-title {
+  margin: 0;
+  margin-bottom: 3.5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.catalog-roof-windows__item-size {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #999;
+  font-size: 12px;
+}
+
+.catalog-roof-windows__item-price {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.catalog-roof-windows__item-price-sale-wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.catalog-roof-windows__item-price-sale-wrapper .catalog-roof-windows__item-price-sale {
+  color: red;
+  margin-right: 5px;
+}
+
+.catalog-roof-windows__item-price-sale-wrapper .catalog-roof-windows__item-price-text {
+  position: relative;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.catalog-roof-windows__item-price-sale-wrapper .catalog-roof-windows__item-price-text::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  transform: rotate(-3.5deg);
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.catalog-roof-windows__sale-percent {
+  padding: 5px 10px;
+  background: red;
+  color: #fff;
+  position: absolute;
+  border-radius: 15px;
+  font-weight: 600;
+  left: 0;
+  bottom: 10px;
+  z-index: 10;
+}
+
+.catalog-title-container {
+  margin-bottom: 75px;
+}
+
+.catalog-title {
+  margin: 0px;
+  font-size: 32px;
+  line-height: 38px;
+  color: #111;
+}
+
+.catalog-title-text {
+  line-height: 20px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1250px) {
+  .catalog-roof-windows__item-size {
+    margin-bottom: 25px;
+  }
+
+  .catalog-roof-windows__item-price {
+    font-size: 18px;
+  }
+
+  .catalog-roof-windows__item-price-sale-wrapper .catalog-roof-windows__item-price-text {
+    position: absolute;
+    top: -15px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  .catalog-roof-windows__item {
+    position: relative;
+    padding: 15px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    width: calc(33% - 20px);
+  }
+
+  .catalog-roof-windows__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .catalog-roof-windows__item:nth-child(4n) {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 760px) {
+  .catalog-roof-windows__item {
+    position: relative;
+    padding: 15px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    width: calc(50% - 20px);
+  }
+
+  .catalog-roof-windows__item:nth-child(2n),
+  .catalog-roof-windows__item:nth-child(4n) {
+    margin-right: 0px;
+  }
+
+  .catalog-roof-windows__item:nth-child(3n) {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .catalog-title {
+    margin: 0px;
+    font-size: 22px;
+    line-height: 28px;
+    color: #111;
+  }
+
+  .catalog-title-container {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .catalog-roof-windows__title {
+    margin-bottom: 7.5px;
+    font-size: 22px;
+  }
+
+  .catalog-roof-windows .catalog-roof-windows__wrapper .catalog-roof-windows__item {
+    position: relative;
+    padding: 15px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    width: calc(50% - 6px);
+  }
+
+  .catalog-roof-windows .catalog-roof-windows__wrapper .catalog-roof-windows__item:nth-child(2n),
+  .catalog-roof-windows .catalog-roof-windows__wrapper .catalog-roof-windows__item:nth-child(4n) {
+    margin-right: 0px;
+  }
+
+  .catalog-roof-windows__item-signature {
+    font-size: 10px;
+  }
+
+  .catalog-roof-windows__item-title {
+    margin: 0;
+    margin-bottom: 3.5px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .catalog-roof-windows__item-size {
+    font-size: 10px;
+  }
+
+  .catalog-roof-windows__item-img {
+    height: 170px;
+  }
+
+  .catalog-roof-windows__item-price {
+    font-size: 18px;
+  }
+
+  .catalog-roof-windows__item-hit,
+  .catalog-roof-windows__item-new {
+    padding: 5px;
+    top: 10px;
+  }
+
+  .catalog-roof-windows__item-hit-text,
+  .catalog-roof-windows__item-new-text {
+    font-size: 14px;
+  }
+
+  .catalog-roof-windows__item-new-text--min {
+    display: block;
+  }
+
+  .catalog-roof-windows__item-new-text--big {
+    display: none;
+  }
+}

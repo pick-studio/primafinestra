@@ -1,0 +1,302 @@
+/* Кнопка открытия попапа */
+
+.contacts__open-popap-button {
+    display: block;
+    min-width: 150px;
+    padding: 15px 40px;
+    color: #fff;
+    background: rgb(85, 171, 104);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid rgb(85, 171, 104);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.contacts__open-popap-button:hover {
+    background: rgb(68, 138, 83);
+}
+
+.contacts__popap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    z-index: 100;
+}
+
+.contacts__popap--active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.contacts__popap-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.contacts__popap-button-close {
+    float: right;
+    position: absolute;
+    top: 27.5px;
+    right: 40px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: rgb(220, 220, 220);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.contacts__popap-button-close::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    width: 2px;
+    border-radius: 20px;
+    height: 60%;
+    background: #333;
+}
+
+.contacts__popap-button-close::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    width: 2px;
+    border-radius: 20px;
+    height: 60%;
+    background: #333;
+}
+
+.contacts__popap-button-close:hover {
+    opacity: 0.6;
+}
+
+.contacts__popap-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 350px;
+    padding: 50px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 100;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.contacts__popap-title {
+    margin: 0;
+    margin-bottom: 12.5px;
+}
+
+.contacts__popap-text-preview {
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contacts__popap-block {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.contacts__popap-input {
+    min-width: 300px;
+    padding: 15px;
+    border: 1px solid #999;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contacts__popap-inputinput:-internal-autofill-selected {
+    background: none;
+}
+
+.contacts__popap-textarea {
+    height: 160px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid rgb(110, 110, 110);
+    resize: none;
+    font-size: 20px;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contacts__popap-button-container {
+    max-width: 135px;
+    display: inline-block;
+    position: relative;
+}
+
+.contacts__popap-button {
+    padding: 15px 40px;
+    background: rgb(15, 122, 182);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.contacts__popap-button:hover {
+    opacity: 0.6;
+}
+
+.contacts__popap-button:hover {
+    opacity: 0.6;
+}
+
+.contacts__popap-button:hover .contacts__popap-button-icon {
+    background: #4149F2;
+}
+
+.contacts__popap-button-icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    width: 16px;
+    height: 16px;
+    /* background-image: url('../images/contacts/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.contacts__popap-textarea:focus {
+    border: 1px solid #4149F2;
+}
+
+.contacts__popap-result,
+.contacts__popap-loading {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    color: #fff;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.contacts__popap-result.open,
+.contacts__popap-loading.open {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.contacts__popap-product-container {
+    margin-bottom: 20px;
+}
+
+.contacts__popap-product-title {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.contacts__popap-product-text {
+    margin: 0;
+    font-weight: 400;
+}
+
+.contacts__popap-range-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contacts__popap-range-item--color {
+    display: inline-block;
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition: 0.2s;
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+    .contacts__popap-form {
+        padding: 20px;
+        padding-top: 50px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: calc(100% - 20px);
+    }
+
+    .contacts__popap-button-close {
+        float: right;
+        position: absolute;
+        top: 13px;
+        right: 20px;
+    }
+
+    .contacts__popap-input {
+        width: 100%;
+        min-width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .contacts__popap-input,
+    .contacts__popap-button {
+        font-size: 16px;
+    }
+
+    .contacts__open-popap-button {
+        font-size: 15px;
+        padding: 13px 15px;
+    }
+}

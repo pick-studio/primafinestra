@@ -1,0 +1,236 @@
+.footer {
+  background: #333;
+  color: #fff;
+}
+
+.footer__wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.footer__contact-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer__contact-link {
+  margin: 0;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__contact-link:hover {
+  opacity: 0.6;
+}
+
+.footer__contact-block {
+  margin-right: 35px;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer__bottom .container {
+  width: 100%;
+}
+
+.footer__bottom {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.footer__bottom-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #999;
+}
+
+.footer__catalog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__catalog-block {
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer__catalog-block:last-child {
+  margin: 0;
+  text-align: end;
+}
+
+.footer__catalog-text {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__catalog-text:hover {
+  opacity: 0.6;
+}
+
+.footer__top-social-link {
+  margin-right: 25px;
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__top-social-link:hover {
+  opacity: 0.6;
+}
+
+.footer__top-social-list {
+  max-height: 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__top-social-icon {
+  width: 18.5px;
+  height: 18.5px;
+  fill: #fff;
+}
+
+.footer__top-social-link--vk {
+  width: 17px;
+  height: 18px;
+}
+
+.footer__bottom-policy {
+  text-decoration: none;
+  color: #999;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__bottom-policy:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__contact {
+    width: 100%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .footer__catalog {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .footer__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer__contact-block {
+    margin-bottom: 25px;
+  }
+
+  .footer__contact-title {
+    font-size: 16px;
+  }
+
+  .footer__contact-link {
+    font-size: 16px;
+  }
+
+  .footer__bottom-wrapper {
+    font-size: 11px;
+  }
+
+  .footer__bottom-policy-container {
+    text-align: right;
+  }
+}
