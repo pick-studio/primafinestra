@@ -1,7 +1,7 @@
 import React from "react";
 import ContactsForm from "../../components/ContactsForm";
 import Head from "next/head";
-import YandexMap from "../../components/YandexMap";
+// import YandexMap from "../../components/YandexMap";
 import Link from "next/link";
 
 export default function Contacts() {
@@ -108,7 +108,7 @@ export default function Contacts() {
                         </div>
                     </div>
 
-                    <YandexMap zoomValue="16"></YandexMap>
+                    {/* <YandexMap zoomValue="16"></YandexMap> */}
                 </div>
             </div>
             <div className="container">
