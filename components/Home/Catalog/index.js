@@ -59,7 +59,6 @@ export default function Catalog() {
                     <SwiperSlide className="catalog__item">
                         <Link href="/catalog/skylights">
                             <Image className="catalog__item-img" src={windowImg} alt="Мансардные окна"></Image>
-                            {/* <img className="catalog__item-img" src={windowImg} alt="Мансардные окна"></img> */}
                             <div className="catalog__item-description">
                                 <span className="catalog__item-signature">
                                     Лидер производства из Дании

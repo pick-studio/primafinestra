@@ -51,7 +51,9 @@ export default function CardProduct({ products, currentItem }) {
     return (
         <>
             <Head>
-                <title>{currentItem.name} - купить в Москве c доставкой по России</title>
+                {currentItem.name &&
+                    <title>{currentItem.name} - купить в Москве c доставкой по России</title>
+                }
                 <meta
                     name="description"
                     content="Кровельные материалы от лидеров производства. У нас вы можете купить подкровельные мембраны от лидера производства из Европы, компании Corotop с доставкой по Москве и России"
@@ -74,7 +76,9 @@ export default function CardProduct({ products, currentItem }) {
                 <meta content="summary_large_image" name="twitter:card" />
                 <meta content="width=device-width, initial-scale=1" name="viewport" />
             </Head>
-            <ProductCard products={products} categoryUrl="roofing-materials" currentItem={currentItem} isSkylight={false} />
+            {products && currentItem &&
+                <ProductCard products={products} categoryUrl="roofing-materials" currentItem={currentItem} isSkylight={false} />
+            }
         </>
     );
 };

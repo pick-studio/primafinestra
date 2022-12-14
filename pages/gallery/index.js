@@ -80,7 +80,6 @@ export default function Gallery() {
 
                 <SwiperSlide>
                     <Image className="gallery__slide-img" src={houseSecond} alt="Выполненный объект"></Image>
-                    <img className="gallery__slide-img" src={houseFirst} alt="Выполненный объект"></img>
                     <div className="gallery__slide-description">
                         <h3 className="gallery__slide-title">Окна Dakea</h3>
                         <p className="gallery__slide-text">Калининград, Озерная 25</p>
@@ -89,7 +88,6 @@ export default function Gallery() {
 
                 <SwiperSlide>
                     <Image className="gallery__slide-img" src={houseThird} alt="Выполненный объект"></Image>
-                    <img className="gallery__slide-img" src={houseThird} alt="Выполненный объект"></img>
                     <div className="gallery__slide-description">
                         <h3 className="gallery__slide-title">Черепица Wienerberger</h3>
                         <p className="gallery__slide-text">Калининград, Красная 105</p>
@@ -98,7 +96,6 @@ export default function Gallery() {
 
                 <SwiperSlide>
                     <Image className="gallery__slide-img" src={houseFour} alt="Выполненный объект"></Image>
-                    <img className="gallery__slide-img" src={houseFour} alt="Выполненный объект"></img>
                     <div className="gallery__slide-description">
                         <h3 className="gallery__slide-title">Черепица Wienerberger</h3>
                         <p className="gallery__slide-text">Калининград, Зеленая 19</p>

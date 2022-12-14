@@ -15,7 +15,7 @@ import "swiper/swiper-bundle.min.css";
 
 SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectFade]);
 
-function CardGallery({ items, salePercent }) {
+export default function CardGallery({ items, salePercent }) {
   let arrowImage = items.images;
   let arrowImageArray = arrowImage.map(item => item.fields.file.url);
   const [isOpen, setIsOpen] = React.useState(false);
@@ -40,59 +40,61 @@ function CardGallery({ items, salePercent }) {
         {items.new && <div className="card-product__slider-new">Новинка!</div>}
       </div>
 
-      <Swiper
-        loop={true}
-        speed={800}
-        spaceBetween={0}
-        slidesPerView={1}
-        navigation={{
-          prevEl: ".swiper-button-prev",
-          nextEl: ".swiper-button-next",
-        }}
-        pagination={{
-          el: ".card-product__pagination",
-          clickable: true,
-          renderBullet: (index, className) => {
-            return `<div class="${className}"></div>`;
-          },
-        }}
-      >
-        {arrowImage.map((currentImage, index) => {
-          return (
-            <SwiperSlide className="card-product__slider-item"
-              key={index}
-              onClick={() => {
-                setIsOpen(true);
-                setPhotoIndex(index);
-              }}>
-              <Image
-                className="card-product__slider-img"
-                src={`https://${currentImage.fields.file.url}`}
-                alt={`Фотография ${items.nameCategory} ${items.name}`}
-                width="500"
-                height="500"
-              ></Image>
-            </SwiperSlide>
-          );
-        })}
+      {items &&
+        <Swiper
+          loop={true}
+          speed={800}
+          spaceBetween={0}
+          slidesPerView={1}
+          navigation={{
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+          }}
+          pagination={{
+            el: ".card-product__pagination",
+            clickable: true,
+            renderBullet: (index, className) => {
+              return `<div class="${className}"></div>`;
+            },
+          }}
+        >
+          {arrowImage.map((currentImage, index) => {
+            return (
+              <SwiperSlide className="card-product__slider-item"
+                key={index}
+                onClick={() => {
+                  setIsOpen(true);
+                  setPhotoIndex(index);
+                }}>
+                <Image
+                  className="card-product__slider-img"
+                  src={`https://${currentImage.fields.file.url}`}
+                  alt={`Фотография ${items.nameCategory} ${items.name}`}
+                  width="500"
+                  height="500"
+                ></Image>
+              </SwiperSlide>
+            );
+          })}
 
-        {arrowImage.length > 1 && (
-          <div className="container">
-            <div className="card-product__arrow-container">
-              <div className="container">
-                <div className="card-product__arrow-wrapper">
-                  <div className="swiper-button-prev card-product__arrow card-product__arrow-prev"></div>
-                  <div className="swiper-button-next card-product__arrow card-product__arrow-next"></div>
+          {arrowImage.length > 1 && (
+            <div className="container">
+              <div className="card-product__arrow-container">
+                <div className="container">
+                  <div className="card-product__arrow-wrapper">
+                    <div className="swiper-button-prev card-product__arrow card-product__arrow-prev"></div>
+                    <div className="swiper-button-next card-product__arrow card-product__arrow-next"></div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="card-product__pagination-container">
-              <div className="card-product__pagination"></div>
+              <div className="card-product__pagination-container">
+                <div className="card-product__pagination"></div>
+              </div>
             </div>
-          </div>
-        )}
-      </Swiper>
+          )}
+        </Swiper>
+      }
 
       {/* {!!isOpen && (
         <Lightbox
@@ -130,6 +132,4 @@ function CardGallery({ items, salePercent }) {
 
     </div>
   );
-}
-
-export default CardGallery;
+};

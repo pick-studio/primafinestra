@@ -20,7 +20,6 @@
     "react-content-loader": "^6.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.40.0",
-    "react-image-lightbox": "^5.1.4",
     "react-yandex-maps": "^4.6.0",
     "swiper": "^8.4.5"
   }
