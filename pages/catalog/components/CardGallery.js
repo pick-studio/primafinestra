@@ -16,7 +16,7 @@ import "swiper/swiper-bundle.min.css";
 SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectFade]);
 
 export default function CardGallery({ items, salePercent }) {
-  // let arrowImageArray = arrowImage.map(item => item.fields.file.url);
+  // let itemsArray = items.map(item => item.fields.file.url);
   const [isOpen, setIsOpen] = React.useState(false);
   const [photoIndex, setPhotoIndex] = React.useState(0);
 
@@ -100,35 +100,35 @@ export default function CardGallery({ items, salePercent }) {
         </Swiper>
       }
 
-      {/* {!!isOpen && (
+      {/* {!!isOpen && items(
         <Lightbox
           animationDuration={500}
           closeLabel="Закрыть"
           zoomInLabel="Увеличить изображение"
           zoomOutLabel="Отдалить изображение"
           imageCaption={items.name}
-          mainSrc={arrowImageArray[photoIndex]}
+          mainSrc={itemsArray[photoIndex]}
           nextSrc={
-            arrowImageArray[
-            (photoIndex + 1) % arrowImage.length
+            items[
+            (photoIndex + 1) % items.length
             ]
           }
           prevSrc={
-            arrowImageArray[
-            (photoIndex + arrowImageArray.length - 1) %
-            arrowImageArray.length
+            itemsArray[
+            (photoIndex + itemsArray.length - 1) %
+            itemsArray.length
             ]
           }
           onCloseRequest={() => setIsOpen(false)}
           onMovePrevRequest={() =>
             setPhotoIndex(
-              (photoIndex + arrowImageArray.length - 1) %
-              arrowImageArray.length
+              (photoIndex + itemsArray.length - 1) %
+              itemsArray.length
             )
           }
           onMoveNextRequest={() =>
             setPhotoIndex(
-              (photoIndex + 1) % arrowImageArray.length
+              (photoIndex + 1) % itemsArray.length
             )
           }
         />

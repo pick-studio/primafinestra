@@ -528,7 +528,7 @@
 
 .card-product .swiper-slide {
   display: flex;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .card-product__slider-img {
