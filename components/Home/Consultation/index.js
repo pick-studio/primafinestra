@@ -1,6 +1,6 @@
 import React from 'react';
 import ContactsForm from '../../ContactsForm';
-// import YandexMap from '../../YandexMap';
+import YandexMap from '../../YandexMap';
 
 export default function Consultation() {
     return (
@@ -17,7 +17,7 @@ export default function Consultation() {
                     </div>
                     <div className="consultation-map">
 
-                        {/* <YandexMap zoomValue="16"></YandexMap> */}
+                        <YandexMap zoomValue="16"></YandexMap>
 
                     </div>
                 </div>

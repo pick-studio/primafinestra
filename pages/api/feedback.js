@@ -12,18 +12,18 @@ export default async (req, res) => {
     } = req.body;
 
     const transporter = nodemailer.createTransport({
-        host: 'smtp.beget.com',
+        host: 'smtp.yandex.ru',
         port: 465,
         secure: true,
         auth: {
-            user: process.env.MAIL_LOGIN, // Сделать через .env.local
-            pass: process.env.MAIL_PASSWORD, // Сделать через .env.local
+            user: "mvp@primafinestra.ru", // Сделать через .env.local
+            pass: "Gbdjdfhjd@2022", // Сделать через .env.local
         },
     });
 
     try {
         const emailRes = await transporter.sendMail({
-            from: 'Сообщение с сайта "PRIMAFINESTRA" <test@pick-studio.ru>',
+            from: 'Сообщение с сайта "PRIMAFINESTRA" <mvp@primafinestra.ru>',
             // to: "mail@bim-cleaning.ru, beliy.bim039@yandex.ru",
             to: "konstantinachapin@mail.ru", // Заменить!
             subject: `Сообщение от клиента`,

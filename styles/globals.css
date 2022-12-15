@@ -308,6 +308,7 @@ img {
   width: 100%;
   position: absolute;
   left: 50%;
+  font-size: 14px;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 
