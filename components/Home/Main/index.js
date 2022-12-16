@@ -101,9 +101,9 @@ export default function Main() {
               <h2 className="main-page__title">
                 Мансардные окна в Москве
                 <br />
-                От лидера отрасли Dakea
+                От лидера отрасли Primafinestra
               </h2>
-              <p className="main-page__text">Какой то текст с расширенной информацией</p>
+              <p className="main-page__text">Один из лидеров в Европе по призводству мансардных окон из Сербии</p>
               <div className="main-page__buttons-container">
                 <Link className="main-page__button" href="catalog/skylights">
                   Перейти в каталог
@@ -132,7 +132,7 @@ export default function Main() {
                 <br />
                 От лидера отрасли Corotop
               </h2>
-              <p className="main-page__text">Какой то текст с расширенной информацией</p>
+              <p className="main-page__text">Проверенные временем материалы от известного производителя</p>
               <div className="main-page__buttons-container">
                 <Link className="main-page__button" href="catalog/roofing-materials">
                   Перейти в каталог

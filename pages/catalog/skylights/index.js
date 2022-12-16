@@ -61,7 +61,7 @@ export default function Skylights({ products }) {
 
                     <div className="catalog-roof-windows__title-container">
                         <h1 className="catalog-roof-windows__title">Мансардные окна</h1>
-                        <p className="catalog-roof-windows__subtitle">Окна от лучшего производителя</p>
+                        <p className="catalog-roof-windows__subtitle">Профессиональное Европейское производство</p>
                     </div>
                     <div className="catalog-roof-windows__wrapper">
                         <CasesList

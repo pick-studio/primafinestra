@@ -349,12 +349,12 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                                                 </div>
                                             </div>
                                             <p className="card-product__advantages-signature">
-                                                Многократное тестирование окна на заводе Dakea
+                                                Многократное тестирование окна на заводе Primafinestra
                                             </p>
                                         </div>
                                         <div className="card-product__advantages-content">
                                             <h2 className="card-product__advantages-content-title">
-                                                Почему окна Dakea?
+                                                Почему окна Primafinestra?
                                             </h2>
                                             <div className="card-product__advantages-content-text-container">
                                                 <p className="card-product__advantages-content-text">
@@ -398,7 +398,7 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
 
                             {/* Тут работает блокировщик рекламы, разобраться с ним */}
 
-                            <div className="card-product__video">
+                            {/* <div className="card-product__video">
                                 <div className="container">
                                     <h2 className="card-product__video-title">
                                         Качество производимых продуктов
@@ -420,7 +420,7 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                                         ></iframe>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </>
                     }
 
