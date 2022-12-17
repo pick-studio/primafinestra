@@ -72,9 +72,9 @@ export default function CardGallery({ items, salePercent }) {
                 }}>
                 <Image
                   className="card-product__slider-img"
-                  src={`https:${currentImage.fields.file.url}`}
+                  src={"https:" + currentImage.fields.file.url}
                   alt={`Фотография ${items.nameCategory} ${items.name}`}
-                  layout="fill"
+                  fill
                 ></Image>
               </SwiperSlide>
             );
