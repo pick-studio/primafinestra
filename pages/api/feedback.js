@@ -16,8 +16,8 @@ export default async (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            user: "mvp@primafinestra.ru", // Сделать через .env.local
-            pass: "Gbdjdfhjd@2022", // Сделать через .env.local
+            user: "mvp@primafinestra.ru",
+            pass: "Gbdjdfhjd@2022",
         },
     });
 
