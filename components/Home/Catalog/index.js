@@ -65,7 +65,7 @@ export default function Catalog() {
                             </Image>
                             <div className="catalog__item-description">
                                 <span className="catalog__item-signature">
-                                    Лидер производства из Дании
+                                    Лидер производства из Сербии
                                 </span>
                                 <h3 className="catalog__item-title">
                                     Мансардные

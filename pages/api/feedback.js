@@ -12,18 +12,18 @@ export default async (req, res) => {
     } = req.body;
 
     const transporter = nodemailer.createTransport({
-        host: 'smtp.yandex.ru',
+        host: 'smtp.mail.ru',
         port: 465,
         secure: true,
         auth: {
-            user: "mvp@primafinestra.ru",
-            pass: "Gbdjdfhjd@2022",
+            user: "hello@primafinestra.ru",
+            pass: "NGuX2VgX5ViMK8izrGCa",
         },
     });
 
     try {
         const emailRes = await transporter.sendMail({
-            from: 'Сообщение с сайта "PRIMAFINESTRA" <mvp@primafinestra.ru>',
+            from: 'Сообщение с сайта "PRIMAFINESTRA" <hello@primafinestra.ru>',
             // to: "mail@bim-cleaning.ru, beliy.bim039@yandex.ru",
             to: "konstantinachapin@mail.ru", // Заменить!
             subject: `Сообщение от клиента`,

@@ -17,8 +17,6 @@ SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectFade]);
 
 import houseFirst from "../../public/img/gallery/house-first.jpeg";
 import houseSecond from "../../public/img/gallery/house-second.jpeg";
-import houseThird from "../../public/img/gallery/house-third.jpeg";
-import houseFour from "../../public/img/gallery/house-four.jpeg";
 
 export default function Gallery() {
     return (
@@ -73,7 +71,7 @@ export default function Gallery() {
                 <SwiperSlide>
                     <Image className="gallery__slide-img" src={houseFirst} alt="Выполненный объект"></Image>
                     <div className="gallery__slide-description">
-                        <h3 className="gallery__slide-title">Мансардное окно Dakea</h3>
+                        <h3 className="gallery__slide-title">Мансардное окно Primafinestra</h3>
                         <p className="gallery__slide-text">Зеленоградск, Прибрежная 94</p>
                     </div>
                 </SwiperSlide>
@@ -81,24 +79,8 @@ export default function Gallery() {
                 <SwiperSlide>
                     <Image className="gallery__slide-img" src={houseSecond} alt="Выполненный объект"></Image>
                     <div className="gallery__slide-description">
-                        <h3 className="gallery__slide-title">Окна Dakea</h3>
+                        <h3 className="gallery__slide-title">Окна Primafinestra</h3>
                         <p className="gallery__slide-text">Калининград, Озерная 25</p>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <Image className="gallery__slide-img" src={houseThird} alt="Выполненный объект"></Image>
-                    <div className="gallery__slide-description">
-                        <h3 className="gallery__slide-title">Черепица Wienerberger</h3>
-                        <p className="gallery__slide-text">Калининград, Красная 105</p>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <Image className="gallery__slide-img" src={houseFour} alt="Выполненный объект"></Image>
-                    <div className="gallery__slide-description">
-                        <h3 className="gallery__slide-title">Черепица Wienerberger</h3>
-                        <p className="gallery__slide-text">Калининград, Зеленая 19</p>
                     </div>
                 </SwiperSlide>
 
