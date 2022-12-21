@@ -3,16 +3,17 @@ import Link from "next/link";
 // import urlTransliterate from "./UrlTransliterate";
 import ContentLoader from "react-content-loader";
 
-export default function CasesItem({ caseItem, catalogUrl, index, isLoad = false }) {
+export default function CasesItem({ caseItem, index, isLoad = false }) {
 
-  // Выбор категории переделать!!!
-  const categoryTransliterate = () => {
-    if (caseItem) {
-      if (caseItem.fields.category === "Мансардные окна") {
-        return "/catalog-windows/";
-      } else if (caseItem.fields.category === "Подкровельные мембраны") {
-        return "/roofing-membranes/";
-      }
+  console.log(caseItem.fields.nameCategory);
+
+  const returnCatalogUrl = (currentCategory) => {
+    if (currentCategory === "Мансардное окно") {
+      const catalogUrl = "skylights";
+      return catalogUrl;
+    } else if (currentCategory === "Подкровельная мембрана") {
+      const catalogUrl = "roofing-materials";
+      return catalogUrl;
     }
   };
 
@@ -22,7 +23,7 @@ export default function CasesItem({ caseItem, catalogUrl, index, isLoad = false 
         <Link
           key={index}
           className="catalog-roof-windows__item"
-          href={`/catalog/${catalogUrl}/${caseItem.fields.slug}`}
+          href={`/catalog/${returnCatalogUrl(caseItem.fields.nameCategory)}/${caseItem.fields.slug}`}
         >
           {caseItem.fields.hit && (
             <div className="catalog-roof-windows__item-hit">

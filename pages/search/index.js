@@ -104,7 +104,7 @@ function Search({ items }) {
                             }
                             {filteredProducts.map((item, index) => {
                                 return (
-                                    <CasesItem key={index} caseItem={item} catalogUrl={"Доделать"} index={index} url={"Доделать"} isLoad={true}></CasesItem>
+                                    <CasesItem key={index} caseItem={item} catalogUrl={"Доделать"} index={index} isLoad={true}></CasesItem>
                                 );
                             })}
                         </div>
