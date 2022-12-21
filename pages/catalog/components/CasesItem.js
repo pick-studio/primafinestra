@@ -5,8 +5,6 @@ import ContentLoader from "react-content-loader";
 
 export default function CasesItem({ caseItem, index, isLoad = false }) {
 
-  console.log(caseItem.fields.nameCategory);
-
   const returnCatalogUrl = (currentCategory) => {
     if (currentCategory === "Мансардное окно") {
       const catalogUrl = "skylights";
