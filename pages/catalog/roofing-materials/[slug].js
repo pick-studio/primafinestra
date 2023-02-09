@@ -1,6 +1,10 @@
 import { createClient } from "contentful";
 import ProductCard from "../../../components/ProductCard/index.js";
+import Image from "next/image.js";
 import Head from "next/head.js";
+
+import firstAdvantagesImage from '../../../public/img/card-product/advantages-roofing-materials/image-1.jpg';
+import secondAdvantagesImage from '../../../public/img/card-product/advantages-roofing-materials/image-2.jpg';
 
 const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
@@ -77,7 +81,15 @@ export default function CardProduct({ products, currentItem }) {
                 <meta content="width=device-width, initial-scale=1" name="viewport" />
             </Head>
             {products && currentItem &&
-                <ProductCard products={products} categoryUrl="roofing-materials" currentItem={currentItem} isSkylight={false} />
+                <>
+                    <ProductCard products={products} categoryUrl="roofing-materials" currentItem={currentItem} isSkylight={false} />
+
+                    <div className="container">
+                        <h2 className="card-product__advantages-content-title">Рекомендуемые структуры наклонной кровли</h2>
+                        <Image src={firstAdvantagesImage} alt="Рекомендуемые структуры наклонной кровли"></Image>
+                        <Image src={secondAdvantagesImage} alt="Рекомендуемые структуры наклонной кровли"></Image>
+                    </div>
+                </>
             }
         </>
     );

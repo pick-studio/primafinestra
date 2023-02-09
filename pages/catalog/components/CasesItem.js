@@ -5,11 +5,12 @@ import ContentLoader from "react-content-loader";
 
 export default function CasesItem({ caseItem, index, isLoad = false }) {
 
+  // Автоматизировать через автотранслит
   const returnCatalogUrl = (currentCategory) => {
-    if (currentCategory === "Мансардное окно") {
+    if (currentCategory === "Мансардные окна") {
       const catalogUrl = "skylights";
       return catalogUrl;
-    } else if (currentCategory === "Подкровельная мембрана") {
+    } else if (currentCategory === "Подкровельные мембраны") {
       const catalogUrl = "roofing-materials";
       return catalogUrl;
     }
@@ -21,7 +22,7 @@ export default function CasesItem({ caseItem, index, isLoad = false }) {
         <Link
           key={index}
           className="catalog-roof-windows__item"
-          href={`/catalog/${returnCatalogUrl(caseItem.fields.nameCategory)}/${caseItem.fields.slug}`}
+          href={`/catalog/${returnCatalogUrl(caseItem.fields.category)}/${caseItem.fields.slug}`}
         >
           {caseItem.fields.hit && (
             <div className="catalog-roof-windows__item-hit">

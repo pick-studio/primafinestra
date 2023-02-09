@@ -22,8 +22,6 @@ export async function getStaticProps() {
 
 function Search({ items }) {
 
-    console.log(items);
-
     // закрывать при переходе на другую страницу
     // let location = useLocation().pathname;
 

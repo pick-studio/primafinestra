@@ -26,8 +26,6 @@ export async function getStaticProps() {
 
 export default function Skylights({ products }) {
 
-    console.log(products);
-
     return (
         <>
             <Head>
@@ -63,6 +61,7 @@ export default function Skylights({ products }) {
                         <h1 className="catalog-roof-windows__title">Мансардные окна</h1>
                         <p className="catalog-roof-windows__subtitle">Профессиональное Европейское производство</p>
                     </div>
+
                     <div className="catalog-roof-windows__wrapper">
                         <CasesList
                             // catalogName={catalogName}
