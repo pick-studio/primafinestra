@@ -66,11 +66,11 @@ export default function Main() {
               }
             }
 
-            return `<div className="main-page__pagination-item ${className}">
-                  <span className="main-page__pagination-item-text">${categorySelection(
+            return `<div class="main-page__pagination-item ${className}">
+                  <span class="main-page__pagination-item-text">${categorySelection(
               index
             )}</span>
-                  <span className="main-page__pagination-item-toggle"></span>
+                  <span class="main-page__pagination-item-toggle"></span>
                 </div>`;
           },
         }}
@@ -111,7 +111,7 @@ export default function Main() {
 
                 {/* <a
                   href="https://www.youtube.com/watch?v=tiHkOM2IdzE"
-                  title="Производство NICE WIN"
+                  title="Производство Dakea"
                   className="main-page__button main-page__button--video"
                   rel="noreferrer"
                   target="_blank"
