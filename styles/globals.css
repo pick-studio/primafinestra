@@ -398,6 +398,44 @@ img {
   background: rgb(15, 122, 182);
 }
 
+.error {
+  padding-top: 180px;
+  height: 100vh;
+  max-height: 600px;
+}
+
+.error h1 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.error p {
+  margin: 0px;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.error-list {
+  padding: 0px;
+  margin: 0px;
+}
+
+.error-list li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.error-list li a {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
 /* Кнопка order  */
 
 @media screen and (min-width: 0px) and (max-width: 720px) {

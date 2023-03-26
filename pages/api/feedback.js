@@ -16,21 +16,21 @@ export default async (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            user: "hello@primafinestra.ru",
-            pass: "NGuX2VgX5ViMK8izrGCa",
+            user: "shop@nice-win.ru",
+            pass: "5rQ%gc2N",
         },
     });
 
     try {
         const emailRes = await transporter.sendMail({
-            from: 'Сообщение с сайта "NICE WIN" <hello@primafinestra.ru>',
+            from: 'Сообщение с сайта "NICE WIN" <shop@nice-win.ru>',
             // to: "mail@bim-cleaning.ru, beliy.bim039@yandex.ru",
-            to: "mvp@kenoll.ru", // Заменить!
+            to: "wdf@inbox.ru", // Заменить!
             subject: `Сообщение от клиента`,
             html: `
       <div style="color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 1.5; margin: 0;">
   <table
-      class="m_8718936357472974987wrapper-table"
+      className="m_8718936357472974987wrapper-table"
       cellpadding="5"
       cellspacing="0"
       width="100%"
@@ -53,7 +53,7 @@ export default async (req, res) => {
                                                   style="border-color: transparent; font-weight: normal; text-align: left; vertical-align: top;"
                                                   cellpadding="0"
                                                   cellspacing="0"
-                                                  class="m_8718936357472974987tc"
+                                                  className="m_8718936357472974987tc"
                                                   align="left"
                                                   valign="top"
                                               >
@@ -90,7 +90,7 @@ export default async (req, res) => {
                                                   style="border-color: transparent; font-weight: normal; text-align: left; vertical-align: top;"
                                                   cellpadding="0"
                                                   cellspacing="0"
-                                                  class="m_8718936357472974987tc"
+                                                  className="m_8718936357472974987tc"
                                                   align="left"
                                                   valign="top"
                                               >
@@ -102,7 +102,7 @@ export default async (req, res) => {
                                                                       <tbody>
                                                                           <tr style="border-color: transparent; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
                                                                               <td
-                                                                                  class="m_8718936357472974987content-cell m_8718936357472974987padding-lr-0 m_8718936357472974987padding-top-0 m_8718936357472974987padding-bottom-0"
+                                                                                  className="m_8718936357472974987content-cell m_8718936357472974987padding-lr-0 m_8718936357472974987padding-top-0 m_8718936357472974987padding-bottom-0"
                                                                                   width="600"
                                                                                   style="border-collapse: collapse; border-color: transparent; vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;"
                                                                                   valign="top"
@@ -117,17 +117,17 @@ export default async (req, res) => {
                                                                                           border="0"
                                                                                           width="600"
                                                                                           height="auto"
-                                                                                          class="m_8718936357472974987sp-img CToWUd a6T"
+                                                                                          className="m_8718936357472974987sp-img CToWUd a6T"
                                                                                           align="left"
                                                                                           alt="454_3"
                                                                                           src="https://i.ibb.co/GQfppXF/2c0780f0cc93bd3cbe39d416fa0f69c7.jpg"
                                                                                           style="border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; margin: 0; display: block;"
                                                                                           tabindex="0"
                                                                                       />
-                                                                                      <div class="a6S" dir="ltr" style="opacity: 0.01; left: 1326px; top: 281px;">
-                                                                                          <div id=":p1" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Скачать" role="button" tabindex="0" aria-label="Скачать файл " data-tooltip-class="a1V">
-                                                                                              <div class="akn">
-                                                                                                  <div class="aSK J-J5-Ji aYr"></div>
+                                                                                      <div className="a6S" dir="ltr" style="opacity: 0.01; left: 1326px; top: 281px;">
+                                                                                          <div id=":p1" className="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Скачать" role="button" tabindex="0" aria-label="Скачать файл " data-tooltip-className="a1V">
+                                                                                              <div className="akn">
+                                                                                                  <div className="aSK J-J5-Ji aYr"></div>
                                                                                               </div>
                                                                                           </div>
                                                                                       </div>
@@ -155,7 +155,7 @@ export default async (req, res) => {
                                                                       <tbody>
                                                                           <tr style="border-color: transparent; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
                                                                               <td
-                                                                                  class="m_8718936357472974987content-cell m_8718936357472974987padding-bottom-0"
+                                                                                  className="m_8718936357472974987content-cell m_8718936357472974987padding-bottom-0"
                                                                                   width="540"
                                                                                   style="
                                                                               border-collapse: collapse;
@@ -296,7 +296,7 @@ export default async (req, res) => {
                                                   style="border-color: transparent; font-weight: normal; text-align: left; vertical-align: top;"
                                                   cellpadding="0"
                                                   cellspacing="0"
-                                                  class="m_8718936357472974987tc"
+                                                  className="m_8718936357472974987tc"
                                                   align="left"
                                                   valign="top"
                                               >
@@ -305,7 +305,7 @@ export default async (req, res) => {
                                                           <tr style="border-color: transparent;">
                                                               <td cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-color: transparent;">
                                                                   <div
-                                                                      class="m_8718936357472974987block-divider"
+                                                                      className="m_8718936357472974987block-divider"
                                                                       style="font-size: 16px; line-height: 1.5; padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;"
                                                                   >
                                                                   </div>
@@ -327,7 +327,7 @@ export default async (req, res) => {
                                                                       <tbody>
                                                                           <tr style="border-color: transparent; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
                                                                               <td
-                                                                                  class="m_8718936357472974987content-cell m_8718936357472974987padding-top-0 m_8718936357472974987padding-bottom-0"
+                                                                                  className="m_8718936357472974987content-cell m_8718936357472974987padding-top-0 m_8718936357472974987padding-bottom-0"
                                                                                   width="540"
                                                                                   style="
                                                                               border-collapse: collapse;
@@ -387,7 +387,7 @@ export default async (req, res) => {
                                                                       <tbody>
                                                                           <tr style="border-color: transparent; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
                                                                               <td
-                                                                                  class="m_8718936357472974987content-cell m_8718936357472974987padding-top-0"
+                                                                                  className="m_8718936357472974987content-cell m_8718936357472974987padding-top-0"
                                                                                   width="540"
                                                                                   style="
                                                                               border-collapse: collapse;
@@ -423,13 +423,13 @@ export default async (req, res) => {
 </div>`})
 
         const emailUserRes = await transporter.sendMail({
-            from: 'Сообщение с сайта "NICE WIN" <hello@primafinestra.ru>',
+            from: 'Сообщение с сайта "NICE WIN" <shop@nice-win.ru>',
             to: email,
             subject: `Мы получили ваше сообщение!`,
             html: `
             <div style="color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size: 16px; line-height: 1.5; margin: 0;">
         <table
-            class="m_8718936357472974987wrapper-table"
+            className="m_8718936357472974987wrapper-table"
             cellpadding="5"
             cellspacing="0"
             width="100%"
@@ -452,7 +452,7 @@ export default async (req, res) => {
                                                         style="border-color: transparent; font-weight: normal; text-align: left; vertical-align: top;"
                                                         cellpadding="0"
                                                         cellspacing="0"
-                                                        class="m_8718936357472974987tc"
+                                                        className="m_8718936357472974987tc"
                                                         align="left"
                                                         valign="top"
                                                     >
@@ -489,7 +489,7 @@ export default async (req, res) => {
                                                         style="border-color: transparent; font-weight: normal; text-align: left; vertical-align: top;"
                                                         cellpadding="0"
                                                         cellspacing="0"
-                                                        class="m_8718936357472974987tc"
+                                                        className="m_8718936357472974987tc"
                                                         align="left"
                                                         valign="top"
                                                     >
@@ -501,7 +501,7 @@ export default async (req, res) => {
                                                                             <tbody>
                                                                                 <tr style="border-color: transparent; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
                                                                                     <td
-                                                                                        class="m_8718936357472974987content-cell m_8718936357472974987padding-lr-0 m_8718936357472974987padding-top-0 m_8718936357472974987padding-bottom-0"
+                                                                                        className="m_8718936357472974987content-cell m_8718936357472974987padding-lr-0 m_8718936357472974987padding-top-0 m_8718936357472974987padding-bottom-0"
                                                                                         width="600"
                                                                                         style="border-collapse: collapse; border-color: transparent; vertical-align: top; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;"
                                                                                         valign="top"
@@ -516,17 +516,17 @@ export default async (req, res) => {
                                                                                                 border="0"
                                                                                                 width="600"
                                                                                                 height="auto"
-                                                                                                class="m_8718936357472974987sp-img CToWUd a6T"
+                                                                                                className="m_8718936357472974987sp-img CToWUd a6T"
                                                                                                 align="left"
                                                                                                 alt="454_3"
                                                                                                 src="https://i.ibb.co/GQfppXF/2c0780f0cc93bd3cbe39d416fa0f69c7.jpg"
                                                                                                 style="border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; margin: 0; display: block;"
                                                                                                 tabindex="0"
                                                                                             />
-                                                                                            <div class="a6S" dir="ltr" style="opacity: 0.01; left: 1326px; top: 281px;">
-                                                                                                <div id=":p1" class="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Скачать" role="button" tabindex="0" aria-label="Скачать файл " data-tooltip-class="a1V">
-                                                                                                    <div class="akn">
-                                                                                                        <div class="aSK J-J5-Ji aYr"></div>
+                                                                                            <div className="a6S" dir="ltr" style="opacity: 0.01; left: 1326px; top: 281px;">
+                                                                                                <div id=":p1" className="T-I J-J5-Ji aQv T-I-ax7 L3 a5q" title="Скачать" role="button" tabindex="0" aria-label="Скачать файл " data-tooltip-className="a1V">
+                                                                                                    <div className="akn">
+                                                                                                        <div className="aSK J-J5-Ji aYr"></div>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
@@ -554,7 +554,7 @@ export default async (req, res) => {
                                                                             <tbody>
                                                                                 <tr style="border-color: transparent; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
                                                                                     <td
-                                                                                        class="m_8718936357472974987content-cell m_8718936357472974987padding-bottom-0"
+                                                                                        className="m_8718936357472974987content-cell m_8718936357472974987padding-bottom-0"
                                                                                         width="540"
                                                                                         style="
                                                                                     border-collapse: collapse;
@@ -695,7 +695,7 @@ export default async (req, res) => {
                                                         style="border-color: transparent; font-weight: normal; text-align: left; vertical-align: top;"
                                                         cellpadding="0"
                                                         cellspacing="0"
-                                                        class="m_8718936357472974987tc"
+                                                        className="m_8718936357472974987tc"
                                                         align="left"
                                                         valign="top"
                                                     >
@@ -704,7 +704,7 @@ export default async (req, res) => {
                                                                 <tr style="border-color: transparent;">
                                                                     <td cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-color: transparent;">
                                                                         <div
-                                                                            class="m_8718936357472974987block-divider"
+                                                                            className="m_8718936357472974987block-divider"
                                                                             style="font-size: 16px; line-height: 1.5; padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;"
                                                                         >
                                                                         </div>
@@ -726,7 +726,7 @@ export default async (req, res) => {
                                                                             <tbody>
                                                                                 <tr style="border-color: transparent; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
                                                                                     <td
-                                                                                        class="m_8718936357472974987content-cell m_8718936357472974987padding-top-0 m_8718936357472974987padding-bottom-0"
+                                                                                        className="m_8718936357472974987content-cell m_8718936357472974987padding-top-0 m_8718936357472974987padding-bottom-0"
                                                                                         width="540"
                                                                                         style="
                                                                                     border-collapse: collapse;
@@ -786,7 +786,7 @@ export default async (req, res) => {
                                                                             <tbody>
                                                                                 <tr style="border-color: transparent; color: #444; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;">
                                                                                     <td
-                                                                                        class="m_8718936357472974987content-cell m_8718936357472974987padding-top-0"
+                                                                                        className="m_8718936357472974987content-cell m_8718936357472974987padding-top-0"
                                                                                         width="540"
                                                                                         style="
                                                                                     border-collapse: collapse;

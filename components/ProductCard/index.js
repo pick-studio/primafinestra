@@ -7,7 +7,9 @@ import advantagesImage from "../../public/img/advantages/window.jpeg";
 import Image from "next/image.js";
 
 export default function ProductCard({ products, currentItem, categoryUrl, isSkylight }) {
+    const [currentPriceIndex, setCurrentPriceIndex] = React.useState(0);
     const formRange = React.useRef("");
+
     const rangeFirstInput = React.useRef("");
 
     const [radioState, setRadioState] = React.useState("");
@@ -15,8 +17,9 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
         setRadioState(rangeFirstInput.current.value);
     }, [rangeFirstInput.current.value]);
 
-    const toggleRadio = (e) => {
+    const toggleRadio = (e, index) => {
         setRadioState(e.target.value);
+        setCurrentPriceIndex(index);
     };
 
     return (
@@ -31,7 +34,7 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                         />
                         <meta
                             name="keywords"
-                            content={`${currentItem.fields.category} ${currentItem.fields.name}, Мансардные окна в Калининграде, Недорогие мансардные окна, Большие мансардные окна, Окна в крышу, Окна на крыше, Окна Dakea, Окна в частный дом`}
+                            content={`${currentItem.fields.category} ${currentItem.fields.name}, Мансардные окна в Калининграде, Недорогие мансардные окна, Большие мансардные окна, Окна в крышу, Окна на крыше, Окна NICE WIN, Окна в частный дом`}
                         />
                     </Head>
 
@@ -68,7 +71,22 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
 
                                         {/* Цена товара со скидкой и без */}
 
-                                        <p className="card-product__item-price">
+                                        {/* Цены на продукцию */}
+                                        {!currentItem.fields.additionalPrices && currentItem.fields.price &&
+                                            <span className={"price activePrice"}>{currentItem.fields.price} ₽</span>
+                                        }
+
+                                        {currentItem.fields.additionalPrices &&
+                                            currentItem.fields.additionalPrices.map((item, index) => {
+                                                if (currentPriceIndex === index) {
+                                                    return <span className={"price activePrice"} key={index}>{item} ₽</span>
+                                                }
+                                            })
+                                        }
+
+                                        {/* Цены на продукцию */}
+
+                                        {/* <p className="card-product__item-price">
                                             {currentItem.fields.salePrice ? (
                                                 <div className="card-product__item-price-sale-wrapper">
                                                     <div className="card-product__item-price-sale">
@@ -103,7 +121,7 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                                                     {currentItem.fields.price} ₽
                                                 </span>
                                             )}
-                                        </p>
+                                        </p> */}
 
                                         {/* Цена товара со скидкой и без */}
 
@@ -147,7 +165,7 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                                                                                 className="card-product__range-input"
                                                                                 value={featureItem}
                                                                                 onChange={(e) => {
-                                                                                    toggleRadio(e);
+                                                                                    toggleRadio(e, index);
                                                                                 }}
                                                                                 defaultChecked={
                                                                                     index === 0 ? true : false
@@ -178,7 +196,7 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                                                                                 type="radio"
                                                                                 value={featureItem}
                                                                                 onChange={(e) => {
-                                                                                    toggleRadio(e);
+                                                                                    toggleRadio(e, index);
                                                                                 }}
                                                                                 defaultChecked={
                                                                                     index === 0 ? true : false
@@ -306,7 +324,7 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                                                 <Image
                                                     className="card-product__advantages-image"
                                                     src={advantagesImage}
-                                                    alt="Окна Dakea"
+                                                    alt="Окна NICE WIN"
                                                     width="600px"
                                                     height="500px"
                                                 ></Image>
@@ -425,7 +443,8 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                     }
 
                 </div>
-            )}
-        </div>
+            )
+            }
+        </div >
     );
 };

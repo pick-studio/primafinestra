@@ -151,6 +151,10 @@
   font-weight: 500;
 }
 
+.catalog-roof-windows__item-price-text span {
+  margin-right: 3px;
+}
+
 .catalog-roof-windows__item-price-sale-wrapper .catalog-roof-windows__item-price-text::after {
   content: "";
   width: 100%;

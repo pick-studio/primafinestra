@@ -521,6 +521,17 @@
   margin-bottom: 5px;
 }
 
+/* Активная цена */
+.price {
+  display: none;
+}
+
+.activePrice {
+  display: block;
+}
+
+/* Активная цена */
+
 .card-product__text-description {
   margin: 0;
   margin-bottom: 20px;

@@ -99,6 +99,9 @@ export default function CasesItem({ caseItem, index, isLoad = false }) {
                     <div className="catalog-roof-windows__item-price-sale">
                       {caseItem.fields.priceFrom ? <span>от </span> : undefined}
                       <span>{caseItem.fields.salePrice} ₽</span>
+                      {caseItem.fields.additionalPrices &&
+                        <span>{caseItem.fields.additionalPrices[0]}</span>
+                      }
                       <span>
                         {caseItem.fields.pricePerMetr ? (
                           <span>
@@ -109,8 +112,16 @@ export default function CasesItem({ caseItem, index, isLoad = false }) {
                       </span>
                     </div>
                     <div className="catalog-roof-windows__item-price-text">
-                      {caseItem.fields.priceFrom ? <span>от </span> : undefined}
-                      <span>{caseItem.fields.price} ₽</span>
+                      {caseItem.fields.priceFrom ?
+                        <>
+                          <span>от</span>
+                        </> : undefined}
+                      {!caseItem.fields.additionalPrices &&
+                        <span>{caseItem.fields.price} ₽</span>
+                      }
+                      {caseItem.fields.additionalPrices &&
+                        <span>{caseItem.fields.additionalPrices[0]}</span>
+                      }
                       {caseItem.fields.pricePerMetr ? (
                         <span>
                           {" "}
@@ -121,9 +132,15 @@ export default function CasesItem({ caseItem, index, isLoad = false }) {
                   </div>
                 </>
               ) : (
-                <span className="catalog-roof-windows__item-price-text">
-                  {caseItem.fields.price} ₽
-                </span>
+                <div className="catalog-roof-windows__item-price-text">
+                  {caseItem.fields.rangeList ? <span>от</span> : ''}
+                  {caseItem.fields.additionalPrices &&
+                    <span>{caseItem.fields.additionalPrices[0]}</span>
+                  }
+                  {!caseItem.fields.additionalPrices &&
+                    <span>{caseItem.fields.price} ₽</span>
+                  }
+                </div>
               )}
             </div>
           </div>

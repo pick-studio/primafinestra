@@ -67,9 +67,10 @@ export default function Footer() {
             <div className="footer__bottom">
                 <div className="container">
                     <div className="footer__bottom-wrapper">
-                        {/* <div>ООО «Найсвин»</div> */}
+                        <div>2023 - Все для кровли в Москве</div>
                         <div className="footer__bottom-policy-container">
-                            <Link className="footer__bottom-policy" href="/policy">Политика конфиденциальности</Link>
+                            {/* <Link className="footer__bottom-policy" href="/policy">Политика конфиденциальности</Link> */}
+
                         </div>
                     </div>
                 </div>

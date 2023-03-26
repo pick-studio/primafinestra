@@ -52,7 +52,7 @@ export default function Catalog() {
                         el: ".catalog__pagination",
                         clickable: true,
                         renderBullet: (index, className) => {
-                            return `<div class="${className}"></div>`;
+                            return `<div className="${className}"></div>`;
                         },
                     }}
                 >

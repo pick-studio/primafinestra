@@ -28,9 +28,9 @@ export default function Gallery() {
                 <title>Галерея - готовые объекты которые мы выполнили</title>
                 <meta
                     name="description"
-                    content="Готовые объекты компании NICE WIN которые мы выполнили. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России"
+                    content="Готовые объекты компании NICE WIN которые мы выполнили. У нас вы можете купить мансардные окна от лидера производства из Европы, компании NICE WIN с доставкой по Москве и России"
                 />
-                <meta property="og:description" content="Готовые объекты компании NICE WIN которые мы выполнили. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России" />
+                <meta property="og:description" content="Готовые объекты компании NICE WIN которые мы выполнили. У нас вы можете купить мансардные окна от лидера производства из Европы, компании NICE WIN с доставкой по Москве и России" />
                 <meta
                     name="keywords"
                     content="Компания по продаже кровельных материалов в Москве. Мансардные окна и подкровельная мембрана от лидеров производства"
@@ -63,7 +63,7 @@ export default function Gallery() {
                     el: ".card-product__pagination",
                     clickable: true,
                     renderBullet: (index, className) => {
-                        return `<div class="${className}">
+                        return `<div className="${className}">
                 </div>`;
                     },
                 }}

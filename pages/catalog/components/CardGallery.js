@@ -58,7 +58,7 @@ export default function CardGallery({ items, salePercent }) {
             el: ".card-product__pagination",
             clickable: true,
             renderBullet: (index, className) => {
-              return `<div class="${className}"></div>`;
+              return `<div className="${className}"></div>`;
             },
           }}
         >
