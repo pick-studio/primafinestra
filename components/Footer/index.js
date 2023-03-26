@@ -16,8 +16,8 @@ export default function Footer() {
 
                         <div className="footer__contact-block">
                             <h3 className="footer__contact-title">Email адрес</h3>
-                            <a className="footer__contact-link" href="mailto:mvp@kenoll.ru">
-                                mvp@kenoll.ru
+                            <a className="footer__contact-link" href="mailto:wdf@inbox.ru`">
+                                wdf@inbox.ru
                             </a>
                         </div>
 
@@ -67,7 +67,7 @@ export default function Footer() {
             <div className="footer__bottom">
                 <div className="container">
                     <div className="footer__bottom-wrapper">
-                        <div>ООО «Примафинеста»</div>
+                        {/* <div>ООО «Найсвин»</div> */}
                         <div className="footer__bottom-policy-container">
                             <Link className="footer__bottom-policy" href="/policy">Политика конфиденциальности</Link>
                         </div>

@@ -23,7 +23,7 @@ export default async (req, res) => {
 
     try {
         const emailRes = await transporter.sendMail({
-            from: 'Сообщение с сайта "PRIMAFINESTRA" <hello@primafinestra.ru>',
+            from: 'Сообщение с сайта "NICE WIN" <hello@primafinestra.ru>',
             // to: "mail@bim-cleaning.ru, beliy.bim039@yandex.ru",
             to: "mvp@kenoll.ru", // Заменить!
             subject: `Сообщение от клиента`,
@@ -353,7 +353,7 @@ export default async (req, res) => {
                                                                               "
                                                                                       align="center"
                                                                                   >
-                                                                                      <span style="font-size: 13px; line-height: 19.5px;">PRIMAFINESTRA - эксперты в кровле © 2023</span>
+                                                                                      <span style="font-size: 13px; line-height: 19.5px;">NICE WIN - эксперты в кровле © 2023</span>
                                                                                   </p>
                                                                                   <p
                                                                                       style="
@@ -423,7 +423,7 @@ export default async (req, res) => {
 </div>`})
 
         const emailUserRes = await transporter.sendMail({
-            from: 'Сообщение с сайта "PRIMAFINESTRA" <hello@primafinestra.ru>',
+            from: 'Сообщение с сайта "NICE WIN" <hello@primafinestra.ru>',
             to: email,
             subject: `Мы получили ваше сообщение!`,
             html: `
@@ -752,7 +752,7 @@ export default async (req, res) => {
                                                                                     "
                                                                                             align="center"
                                                                                         >
-                                                                                            <span style="font-size: 13px; line-height: 19.5px;">PRIMAFINESTRA - эксперты в кровле © 2023</span>
+                                                                                            <span style="font-size: 13px; line-height: 19.5px;">NICE WIN - эксперты в кровле © 2023</span>
                                                                                         </p>
                                                                                         <p
                                                                                             style="

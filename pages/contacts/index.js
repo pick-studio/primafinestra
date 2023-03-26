@@ -19,9 +19,9 @@ export default function Contacts() {
                     name="keywords"
                     content="Компания по продаже кровельных материалов в Москве. Мансардные окна и подкровельная мембрана от лидеров производства"
                 />
-                <meta content="PRIMAFINESTRA - подбор и продажа профессиональных кровельных материалов" property="twitter:title" />
+                <meta content="NICE WIN - подбор и продажа профессиональных кровельных материалов" property="twitter:title" />
                 <meta property="og:type" content="website" />
-                <meta property="og:site_name" content="PRIMAFINESTRA - подбор и продажа профессиональных кровельных материалов" />
+                <meta property="og:site_name" content="NICE WIN - подбор и продажа профессиональных кровельных материалов" />
                 <meta property="og:title" content="Продаем профессиональную продукцию для кровли в Москве. Мансардные окна и подкровельные мембраны от лидеров производства" />
                 <meta property="og:image" content="https://i.ibb.co/GQfppXF/2c0780f0cc93bd3cbe39d416fa0f69c7.jpg" />
                 <meta property="og:image:type" content="image/jpg" />
@@ -69,17 +69,27 @@ export default function Contacts() {
                             <p className="contacts__information-text">Сб-вс: Выходной</p>
                         </div>
                         <div className="contacts__information-item">
-                            <h4 className="contacts__information-title">Телефон</h4>
+                            <h4 className="contacts__information-title">Телефоны:</h4>
                             <div>
                                 <a className="contacts__information-link" href="tel:89052445577">
                                     +7 (905) 244-55-77
                                 </a>
                             </div>
+                            <div>
+                                <a className="contacts__information-link" href="tel:84994507191">
+                                    +7 (499) 450-71-91
+                                </a>
+                            </div>
+                            <div>
+                                <a className="contacts__information-link" href="tel:89062348888">
+                                    +7 (906) 234-88-88
+                                </a>
+                            </div>
                         </div>
                         <div className="contacts__information-item">
                             <h4 className="contacts__information-title">E-mail</h4>
-                            <a className="contacts__information-link" href="mvp@kenoll.ru">
-                                mvp@kenoll.ru
+                            <a className="contacts__information-link" href="mailto:wdf@inbox.ru">
+                                wdf@inbox.ru
                             </a>
                         </div>
                         <div className="contacts__information-item">

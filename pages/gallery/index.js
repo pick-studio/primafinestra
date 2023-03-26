@@ -28,16 +28,16 @@ export default function Gallery() {
                 <title>Галерея - готовые объекты которые мы выполнили</title>
                 <meta
                     name="description"
-                    content="Готовые объекты компании PRIMAFINESTRA которые мы выполнили. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России"
+                    content="Готовые объекты компании NICE WIN которые мы выполнили. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России"
                 />
-                <meta property="og:description" content="Готовые объекты компании PRIMAFINESTRA которые мы выполнили. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России" />
+                <meta property="og:description" content="Готовые объекты компании NICE WIN которые мы выполнили. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России" />
                 <meta
                     name="keywords"
                     content="Компания по продаже кровельных материалов в Москве. Мансардные окна и подкровельная мембрана от лидеров производства"
                 />
-                <meta content="PRIMAFINESTRA - подбор и продажа профессиональных кровельных материалов" property="twitter:title" />
+                <meta content="NICE WIN - подбор и продажа профессиональных кровельных материалов" property="twitter:title" />
                 <meta property="og:type" content="website" />
-                <meta property="og:site_name" content="PRIMAFINESTRA - подбор и продажа профессиональных кровельных материалов" />
+                <meta property="og:site_name" content="NICE WIN - подбор и продажа профессиональных кровельных материалов" />
                 <meta property="og:title" content="Продаем профессиональную продукцию для кровли в Москве. Мансардные окна и подкровельные мембраны от лидеров производства" />
                 <meta property="og:image" content="https://i.ibb.co/GQfppXF/2c0780f0cc93bd3cbe39d416fa0f69c7.jpg" />
                 <meta property="og:image:type" content="image/jpg" />
@@ -71,7 +71,7 @@ export default function Gallery() {
                 <SwiperSlide>
                     <Image className="gallery__slide-img" src={houseFirst} alt="Выполненный объект"></Image>
                     <div className="gallery__slide-description">
-                        <h3 className="gallery__slide-title">Мансардное окно Primafinestra</h3>
+                        <h3 className="gallery__slide-title">Мансардное окно NICE WIN</h3>
                         <p className="gallery__slide-text">Зеленоградск, Прибрежная 94</p>
                     </div>
                 </SwiperSlide>
@@ -79,7 +79,7 @@ export default function Gallery() {
                 <SwiperSlide>
                     <Image className="gallery__slide-img" src={houseSecond} alt="Выполненный объект"></Image>
                     <div className="gallery__slide-description">
-                        <h3 className="gallery__slide-title">Окна Primafinestra</h3>
+                        <h3 className="gallery__slide-title">Окна NICE WIN</h3>
                         <p className="gallery__slide-text">Калининград, Озерная 25</p>
                     </div>
                 </SwiperSlide>

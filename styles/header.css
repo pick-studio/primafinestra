@@ -194,7 +194,7 @@
 
 .header__menu-logo-img {
   margin-right: 75px;
-  width: 85px;
+  width: 145px;
   height: 85px;
   fill: #fff;
 }
@@ -568,6 +568,10 @@
     width: 80%;
   }
 
+  .header__menu-item {
+    margin-right: 30px;
+  }
+
   .header__menu-top-search-close-button {
     right: 20px;
   }
@@ -737,6 +741,11 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
+  .header__menu-logo-img {
+    margin-right: 75px;
+    width: 115px;
+  }
+
   .header__top-contact-item:last-child {
     display: none;
   }

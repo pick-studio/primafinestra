@@ -56,16 +56,16 @@ function Search({ items }) {
                 <title>Поиск по каталогу - большой выбор кровельных материалов</title>
                 <meta
                     name="description"
-                    content="Поиск по каталогу компании PRIMAFINESTRA. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России"
+                    content="Поиск по каталогу компании NICE WIN. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России"
                 />
-                <meta property="og:description" content="Поиск по каталогу компании PRIMAFINESTRA. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России" />
+                <meta property="og:description" content="Поиск по каталогу компании NICE WIN. У нас вы можете купить мансардные окна от лидера производства из Европы, компании Dakea с доставкой по Москве и России" />
                 <meta
                     name="keywords"
                     content="Компания по продаже кровельных материалов в Москве. Мансардные окна и подкровельная мембрана от лидеров производства"
                 />
-                <meta content="PRIMAFINESTRA - подбор и продажа профессиональных кровельных материалов" property="twitter:title" />
+                <meta content="NICE WIN - подбор и продажа профессиональных кровельных материалов" property="twitter:title" />
                 <meta property="og:type" content="website" />
-                <meta property="og:site_name" content="PRIMAFINESTRA - подбор и продажа профессиональных кровельных материалов" />
+                <meta property="og:site_name" content="NICE WIN - подбор и продажа профессиональных кровельных материалов" />
                 <meta property="og:title" content="Продаем профессиональную продукцию для кровли в Москве. Мансардные окна и подкровельные мембраны от лидеров производства" />
                 <meta property="og:image" content="https://i.ibb.co/GQfppXF/2c0780f0cc93bd3cbe39d416fa0f69c7.jpg" />
                 <meta property="og:image:type" content="image/jpg" />

@@ -101,7 +101,7 @@ export default function Main() {
               <h2 className="main-page__title">
                 Мансардные окна в Москве
                 <br />
-                От лидера отрасли Primafinestra
+                От лидера отрасли NICE WIN
               </h2>
               <p className="main-page__text">Один из лидеров в Европе по призводству мансардных окон из Сербии</p>
               <div className="main-page__buttons-container">

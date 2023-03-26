@@ -349,12 +349,12 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                                                 </div>
                                             </div>
                                             <p className="card-product__advantages-signature">
-                                                Многократное тестирование окна на заводе Primafinestra
+                                                Многократное тестирование окна на заводе NICE WIN
                                             </p>
                                         </div>
                                         <div className="card-product__advantages-content">
                                             <h2 className="card-product__advantages-content-title">
-                                                Почему окна Primafinestra?
+                                                Почему окна NICE WIN?
                                             </h2>
                                             <div className="card-product__advantages-content-text-container">
                                                 <p className="card-product__advantages-content-text">
