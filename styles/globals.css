@@ -63,7 +63,7 @@ img {
 }
 
 .catalog .swiper-slide {
-  max-width: 485px;
+  max-width: 385px;
   position: relative;
   transition: 0.4s;
   transform: scale(1);
