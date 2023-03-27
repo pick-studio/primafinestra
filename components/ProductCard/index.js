@@ -30,11 +30,11 @@ export default function ProductCard({ products, currentItem, categoryUrl, isSkyl
                         <title>{`${currentItem.fields.nameCategory} ${currentItem.fields.name}`}</title>
                         <meta
                             name="description"
-                            content={`${currentItem.fields.nameCategory} ${currentItem.fields.name} в Калининграде. Большой выбор, Низкие цены, Гарантия`}
+                            content={`${currentItem.fields.nameCategory} ${currentItem.fields.name} в Москве. Большой выбор, Низкие цены, Гарантия`}
                         />
                         <meta
                             name="keywords"
-                            content={`${currentItem.fields.category} ${currentItem.fields.name}, Мансардные окна в Калининграде, Недорогие мансардные окна, Большие мансардные окна, Окна в крышу, Окна на крыше, Окна NICE WIN, Окна в частный дом`}
+                            content={`${currentItem.fields.category} ${currentItem.fields.name}, Мансардные окна в Москве, Недорогие мансардные окна, Большие мансардные окна, Окна в крышу, Окна на крыше, Окна NICE WIN, Окна в частный дом`}
                         />
                     </Head>
 

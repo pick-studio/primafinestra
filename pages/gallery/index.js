@@ -72,7 +72,7 @@ export default function Gallery() {
                     <Image className="gallery__slide-img" src={houseFirst} alt="Выполненный объект"></Image>
                     <div className="gallery__slide-description">
                         <h3 className="gallery__slide-title">Мансардное окно NICE WIN</h3>
-                        <p className="gallery__slide-text">Зеленоградск, Прибрежная 94</p>
+                        <p className="gallery__slide-text">Люберцы, Прибрежная 94</p>
                     </div>
                 </SwiperSlide>
 
@@ -80,7 +80,7 @@ export default function Gallery() {
                     <Image className="gallery__slide-img" src={houseSecond} alt="Выполненный объект"></Image>
                     <div className="gallery__slide-description">
                         <h3 className="gallery__slide-title">Окна NICE WIN</h3>
-                        <p className="gallery__slide-text">Калининград, Озерная 25</p>
+                        <p className="gallery__slide-text">Балашиха, Озерная 25</p>
                     </div>
                 </SwiperSlide>
 
