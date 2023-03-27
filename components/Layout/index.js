@@ -18,11 +18,12 @@ export default function Layout({ children }) {
    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(91733859, "init", {
+   ym(92963528, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
-        webvisor:true
+        webvisor:true,
+        ecommerce:"dataLayer"
    });`}
 
                 {`window.replainSettings = { id: '05d73dd1-2129-4bc9-b8d1-1792a63847e4' };
