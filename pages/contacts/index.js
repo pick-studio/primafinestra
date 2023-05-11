@@ -57,9 +57,16 @@ export default function Contacts() {
                 <div className="contacts__wrapper">
                     <div className="contacts__information">
                         <div className="contacts__information-item">
-                            <h4 className="contacts__information-title">Офис и склад компании</h4>
+                            <h4 className="contacts__information-title">Офис компании</h4>
                             <p className="contacts__information-text">
                                 г. Москва, Покровский б-р, 4/17с1, Подъезд номер 3 , Офис 45.
+                            </p>
+                        </div>
+
+                        <div className="contacts__information-item">
+                            <h4 className="contacts__information-title">Склад компании</h4>
+                            <p className="contacts__information-text">
+                                г. Москва, Люберцы, Проектируемый проезд 4296, д. 8
                             </p>
                         </div>
 
@@ -83,6 +90,11 @@ export default function Contacts() {
                             <div>
                                 <a className="contacts__information-link" href="tel:89062348888">
                                     +7 (906) 234-88-88
+                                </a>
+                            </div>
+                            <div>
+                                <a className="contacts__information-link" href="tel:84994507191">
+                                    +7 (499) 450-71-91
                                 </a>
                             </div>
                         </div>
@@ -118,7 +130,10 @@ export default function Contacts() {
                         </div>
                     </div>
 
-                    <YandexMap zoomValue="16"></YandexMap>
+                    <div className="contacts-map">
+                        <iframe className="contacts-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b46b0f654ebe12818b48ba7bbffea5080713453bf9e1752a90ff008a38c5ddd&amp;source=constructor" width="957" height="720" frameborder="0"></iframe>
+                    </div>
+
                 </div>
             </div>
             <div className="container">
