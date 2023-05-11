@@ -92,11 +92,6 @@ export default function Contacts() {
                                     +7 (906) 234-88-88
                                 </a>
                             </div>
-                            <div>
-                                <a className="contacts__information-link" href="tel:84994507191">
-                                    +7 (499) 450-71-91
-                                </a>
-                            </div>
                         </div>
                         <div className="contacts__information-item">
                             <h4 className="contacts__information-title">E-mail</h4>
