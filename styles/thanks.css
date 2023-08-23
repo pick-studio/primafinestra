@@ -1,0 +1,32 @@
+.thanks {
+    padding-top: 150px;
+    height: 80vh;
+}
+
+.text {
+    margin-top: 50px;
+    -webkit-animation-name: emergenceAnimation;
+    animation-name: emergenceAnimation;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes emergenceAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes emergenceAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

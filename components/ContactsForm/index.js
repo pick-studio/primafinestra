@@ -1,11 +1,13 @@
 import React from "react";
 import classnames from "classnames";
 
+import { useRouter } from 'next/router';
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
 export default function ContactsForm({ whiteColorMenu }) {
     const [originUrl, setOriginUrl] = React.useState("");
+    const router = useRouter();
 
     const formTag = React.useRef();
     const formButton = React.useRef();
@@ -44,8 +46,9 @@ export default function ContactsForm({ whiteColorMenu }) {
                 formButton.current.classList.add("button--success");
 
                 formButton.current.setAttribute("disabled", "disabled");
-                setTimeout(() => formButton.current.classList.remove("button--success"), 3000);
-                setTimeout(() => formButton.current.setAttribute("disabled", ""), 5000);
+                setTimeout(() => formButton.current.classList.remove("button--success"), 2000);
+                setTimeout(() => formButton.current.setAttribute("disabled", ""), 3000);
+                setTimeout(() => router.push('/thanks'), 3250);
             }
         } catch (err) {
             formTag.current.reset();

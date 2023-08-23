@@ -1,11 +1,15 @@
 import React from "react";
 import classnames from "classnames";
 
+import { useRouter } from 'next/router';
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
+
+
 export default function ContactsPopap(props) {
   const [visiblePopap, setVisiblePopap] = React.useState(false);
+  const router = useRouter();
 
   const changeVisiblePopap = (currentVisiblePopap) => {
     setVisiblePopap(!visiblePopap);
@@ -55,7 +59,8 @@ export default function ContactsPopap(props) {
 
         formButton.current.setAttribute("disabled", "disabled");
         setTimeout(() => formButton.current.classList.remove("button--success"), 3000);
-        setTimeout(() => formButton.current.setAttribute("disabled", ""), 5000);
+        setTimeout(() => formButton.current.setAttribute("disabled", ""), 3000);
+        setTimeout(() => router.push('/thanks'), 3250);
       }
     } catch (err) {
       formTag.current.reset();

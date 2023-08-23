@@ -11,6 +11,7 @@ import '../styles/card-product.css';
 import '../styles/contacts-popap.css';
 import '../styles/catalog.css';
 import '../styles/search.css';
+import '../styles/thanks.css';
 
 import Layout from '../components/Layout';
 
